@@ -5,6 +5,7 @@
 		$ git clone https://github.com/xxxgitone/react-redux-todos.git
 		cd react-redux-todos
 		npm install
+		npm start
 
 ### redux学习建议(仅供参考)
 ##### 1.入门：首先看阮一峰老师的入门教程，一共三篇，可以大概redux有个了解，可以大概知道一些API的概念也用法，然后再看官方文档，有中文版的。
@@ -14,7 +15,7 @@
 
 ##### 2.进阶：三个视频教学，前面两个国外的，听不懂没关系，看操作也可以明白，后面一个慕课网，这个仓库的代码就是按照作者的操作敲的
 * [Redux Tutorials][4] 一个入门实例，包含redux、react-redux常用方法，异步操作
-* [learn redux][5] 一个比较完成的实例，图片展示评论应用([代码][6])
+* [learn redux][5] 一个比较完成的实例，包含比较全面的基础知识，图片展示评论应用([代码][6])
 * [慕课网入门实例][7] 虽说是入门，但是没有基础，还是听不懂，讲得比较快
 
 ##### 3.另外webpack不熟的可以看这个文档
