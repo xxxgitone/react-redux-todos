@@ -12,7 +12,7 @@ const todo = (state, action) => {
 				return state;
 			}
 			return Object.assign({}, state, {
-				completed: !action.completed
+				completed: !state.completed
 			});
 		default:
 			return state;
