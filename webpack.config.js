@@ -1,29 +1,34 @@
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports={
-	devtool: 'eval-source-map',
-	entry: __dirname + "/index.js",
+	devtool: 'cheap-module-eval-source-map',
+
+	entry: './src/index.js',
 	output: {
-		path: __dirname + "/static",
+		path: path.resolve(__dirname, './dist'),
 		filename: "bundle.js"
 	},
-	
+
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loader: 'babel',
-				query: {
-          			presets: ['es2015','react']
-        		}
+				loader: 'babel-loader',
 			}
 		]
 	},
 
 	devServer: {
-	    contentBase: "./static",
-	    colors: true,
-	    historyApiFallback: true,
-	    inline: true,
-	    hot: true
-  	} ,
+		contentBase: "./dist",
+		historyApiFallback: true,
+		port: 9999
+	},
+
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: './index.html'
+		})
+	]
 }
