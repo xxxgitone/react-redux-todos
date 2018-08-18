@@ -21,8 +21,6 @@
 ##### 3.另外webpack不熟的可以看这个文档
 * [入门Webpack，看这篇就够了][8]
 
-##### 4.Just Test
-
 
   [1]: http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html
   [2]: http://cn.redux.js.org/index.html
